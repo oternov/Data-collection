@@ -52,7 +52,7 @@ if response.status_code == 200:
         with open('data.json', 'w', encoding='utf-8') as f:
             json.dump(results, f, ensure_ascii=False, indent=4) 
     else:
-        print("Нет результатов для вашего запроса.")
+        print("Нет результатов по вашему запросу.")
 else:
     print("Запрос не удался с кодом состояния:", response.status_code)
     print(response.text)
